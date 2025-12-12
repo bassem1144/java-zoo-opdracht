@@ -26,9 +26,14 @@ public class Zoo {
         System.out.print("Voer uw command in: ");
 
         String input = scanner.nextLine();
-        if(input.equals(commands[0] + " henk"))
+        if(input.equals(commands[0]))
         {
+            // Say hello for all animals
             henk.sayHello();
+            elsa.sayHello();
+            dora.sayHello();
+            wally.sayHello();
+            marty.sayHello();
         }
         else
         {
