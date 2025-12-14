@@ -2,8 +2,7 @@ package com.ing.zoo;
 
 import java.util.Random;
 
-public class Tiger {
-    public String name;
+public class Tiger extends Animal {
     public String helloText;
     public String eatText;
     public String trick;

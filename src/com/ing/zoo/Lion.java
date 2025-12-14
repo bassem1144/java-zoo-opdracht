@@ -1,7 +1,6 @@
 package com.ing.zoo;
 
-public class Lion {
-    public String name;
+public class Lion extends Animal {
     public String helloText;
     public String eatText;
 
