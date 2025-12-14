@@ -4,8 +4,8 @@ public class Hippo extends Animal {
     public String helloText;
     public String eatText;
 
-    public Hippo()
-    {
+    public Hippo(String name) {
+        super(name);
     }
 
     public void sayHello()

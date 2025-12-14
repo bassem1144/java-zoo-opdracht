@@ -7,8 +7,8 @@ public class Pig extends Animal {
     public String eatText;
     public String trick;
 
-    public Pig()
-    {
+    public Pig(String name) {
+        super(name);
     }
 
     public void sayHello()

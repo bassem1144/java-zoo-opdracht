@@ -7,8 +7,8 @@ public class Zebra extends Animal {
     public String eatText;
     public String trick;
 
-    public Zebra()
-    {
+    public Zebra(String name) {
+        super(name);
     }
 
     public void sayHello()
