@@ -19,6 +19,9 @@ public class Zoo {
             System.out.print("Voer uw command in: ");
             String input = scanner.nextLine().trim().toLowerCase();
 
+            if(input.equals("exit") || input.equals("quit")) {
+                break;
+            }
 
             String[] inputParts = input.split("\\s+", 2);
 
