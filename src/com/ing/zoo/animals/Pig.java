@@ -1,28 +1,35 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
 
 import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Herbivore;
 import com.ing.zoo.interfaces.TrickPerformer;
 
 import java.util.Random;
 
-public class Tiger extends Animal implements Carnivore, TrickPerformer {
+public class Pig extends Animal implements Carnivore, Herbivore, TrickPerformer {
     public String helloText;
     public String eatText;
     public String trick;
 
-    public Tiger(String name) {
+    public Pig(String name) {
         super(name);
     }
 
     public void sayHello()
     {
-        helloText = "rraaarww";
+        helloText = "splash";
         System.out.println(helloText);
+    }
+
+    public void eatLeaves()
+    {
+        eatText = "munch munch oink";
+        System.out.println(eatText);
     }
 
     public void eatMeat()
     {
-        eatText = "nomnomnom oink wubalubadubdub";
+        eatText = "nomnomnom oink thx";
         System.out.println(eatText);
     }
 
@@ -32,11 +39,11 @@ public class Tiger extends Animal implements Carnivore, TrickPerformer {
         int rnd = random.nextInt(2);
         if(rnd == 0)
         {
-            trick = "jumps in tree";
+            trick = "rolls in the mud";
         }
         else
         {
-            trick = "scratches ears";
+            trick = "runs in circles";
         }
         System.out.println(trick);
     }

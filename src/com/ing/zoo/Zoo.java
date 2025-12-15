@@ -1,5 +1,6 @@
 package com.ing.zoo;
 
+import com.ing.zoo.animals.*;
 import com.ing.zoo.interfaces.Carnivore;
 import com.ing.zoo.interfaces.Herbivore;
 import com.ing.zoo.interfaces.TrickPerformer;
