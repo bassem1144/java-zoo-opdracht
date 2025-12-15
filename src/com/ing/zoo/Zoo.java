@@ -2,6 +2,7 @@ package com.ing.zoo;
 
 import com.ing.zoo.interfaces.Carnivore;
 import com.ing.zoo.interfaces.Herbivore;
+import com.ing.zoo.interfaces.TrickPerformer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,6 +56,12 @@ public class Zoo {
                 for(Animal animal : animals) {
                     if(animal instanceof Carnivore) {
                         ((Carnivore) animal).eatMeat();
+                    }
+                }
+            } else if(input.equals("perform tricks")) {
+                for(Animal animal : animals) {
+                    if(animal instanceof TrickPerformer) {
+                        ((TrickPerformer) animal).performTrick();
                     }
                 }
             } else {
