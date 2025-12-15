@@ -1,8 +1,11 @@
 package com.ing.zoo;
 
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Herbivore;
+
 import java.util.Random;
 
-public class Pig extends Animal {
+public class Pig extends Animal implements Carnivore, Herbivore {
     public String helloText;
     public String eatText;
     public String trick;
